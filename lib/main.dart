@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:practice_flutter/pages/complex_page.dart';
 import 'package:practice_flutter/pages/home2_page.dart';
 import 'package:practice_flutter/pages/home_page.dart';
+import 'package:practice_flutter/pages/menu_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,11 +25,12 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       // home: HomePage(),
-      initialRoute: "home2",
+      initialRoute: "menu",
       routes: {
         "home": (BuildContext context) => HomePage(),
         "home2": (BuildContext context) => Home2Page(),
         "complex": (BuildContext context) => ComplexPage(),
+        "menu": (BuildContext context) => MenuPage(),
       },
     );
   }
